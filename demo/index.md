@@ -1,4 +1,4 @@
-<h2><center> A Unified Framework for One-Shot Voice Conversion and Cloning Using Variational Auto-Encoder </center></h2>
+<h2><center> Unifying One-Shot Voice Conversion and Cloning with Disentangled Speech Representations </center></h2>
 
 <h2>0. Contents</h2>
 1. [Abstract](#abstract)
@@ -8,7 +8,7 @@
 
 <h2>1. Abstract<a name="abstract"></a></h2>
 
-We propose to unify one-shot voice conversion and cloning into a single model that can be end-to-end optimized. To achieve this, we introduce a novel extension to a speech variational auto-encoder (VAE) that disentangles speech into content and speaker representations. Instead of using a fixed Gaussian prior as in a vanilla VAE, we incorporate a learnable text-aware prior as an informative guide to learn the content representation. This helps the proposed model to learn a content representation with reduced speaker information and more accurate linguistic information. The proposed model can sample content representation using either the posterior conditioned on speech or the prior with textual input, enabling respectively one-shot voice conversion and cloning. Objective and subjective evaluations demonstrate the effectiveness of the proposed method in learning disentangled speech representations and achieving high-quality voice conversion and cloning.
+We propose unifying one-shot voice conversion and cloning into a single model that can be end-to-end optimized. To achieve this, we introduce a novel extension to a speech variational auto-encoder (VAE) that disentangles speech into content and speaker representations. Instead of using a fixed Gaussian prior as in the vanilla VAE, we incorporate a learnable text-aware prior as an informative guide for learning the content representation. This results in a content representation with reduced speaker information and more accurate linguistic information. The proposed model can sample the content representation using either the posterior conditioned on speech or the text-aware prior with textual input, enabling one-shot voice conversion and cloning, respectively. Experiments show that the proposed method achieves better or comparable overall performance for one-shot voice conversion and cloning compared to state-of-the-art voice conversion and cloning methods.
 
 
 <h2>2. Comparison models and their implementations<a name="implementations"></a></h2>
